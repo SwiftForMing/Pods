@@ -1,0 +1,1 @@
+../../../JMJParametricAnimation/JMJParametricAnimation/Classes/JMJParametricAnimationBlocks.h
