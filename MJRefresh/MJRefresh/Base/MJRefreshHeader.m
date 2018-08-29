@@ -46,6 +46,7 @@
     
     // 设置y值(当自己的高度发生改变了，肯定要重新调整Y值，所以放到placeSubviews方法中设置y值)
     self.mj_y = - self.mj_h - self.ignoredScrollViewContentInsetTop;
+    
 }
 
 - (void)scrollViewContentOffsetDidChange:(NSDictionary *)change
@@ -130,9 +131,11 @@
                 CGFloat top = self.scrollViewOriginalInset.top + self.mj_h;
                 // 增加滚动区域top
                 self.scrollView.mj_insetT = top;
+//                self.scrollView.mj_insetT = 0;
                 // 设置滚动位置
                 CGPoint offset = self.scrollView.contentOffset;
-                offset.y = -top;
+//                offset.y = -top;
+                offset.y = 0;
                 [self.scrollView setContentOffset:offset animated:NO];
             } completion:^(BOOL finished) {
                 [self executeRefreshingCallback];

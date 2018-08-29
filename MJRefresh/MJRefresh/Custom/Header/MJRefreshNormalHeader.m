@@ -70,6 +70,7 @@
         arrowCenterX -= textWidth / 2 + self.labelLeftInset;
     }
     CGFloat arrowCenterY = self.mj_h * 0.5;
+//    CGFloat arrowCenterY = 0 * 0.5;
     CGPoint arrowCenter = CGPointMake(arrowCenterX, arrowCenterY);
     
     // 箭头
